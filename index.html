@@ -10,7 +10,7 @@
     <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
     <meta content="Skill Showcase" name="Anil" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="/images/ICON.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- MK Lightbox -->
@@ -81,8 +81,8 @@
                             <div class="container ml-0 ml-md-0">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <a class="dropdown-item" href="page-blog.html">Blog</a>
-                                        <a class="dropdown-item" href="page-blog-detail.html">Blog Detail</a>
+                                        <!-- <a class="dropdown-item" href="page-blog.html">Blog</a>
+                                        <a class="dropdown-item" href="page-blog-detail.html">Blog Detail</a> -->
                                         <a class="dropdown-item" href="page-portfolio.html">Portfolio</a>
                                         <a class="dropdown-item" href="page-portfolio-detail.html">Portfolio Detail</a>
                                     </div>
@@ -987,7 +987,7 @@
                             <h5 class="title">Phone</h5>
                             <p class="text-light-muted">Promising development turmoil inclusive education transformative
                                 community</p>
-                            <a href="tel:+152534-468-854" class="text-primary">+91 8791611836</a>
+                            <a href="tel:8791611836" class="text-primary">+91 8791611836</a>
                         </div>
                     </div>
                 </div>
@@ -1002,7 +1002,7 @@
                             <h5 class="title">Email</h5>
                             <p class="text-light-muted">Promising development turmoil inclusive education transformative
                                 community</p>
-                            <a href="mailto:contact@example.com" class="text-primary">anilpandit195@gmail.com</a>
+                            <a href="contact@skillshowcase.ml" class="text-primary">contact@skillshowcase.ml</a>
                         </div>
                     </div>
                 </div>
@@ -1034,7 +1034,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="custom-form mb-sm-30">
-                        <form onclick="sendEmail()" method="post">
+                        <form action="/php/contact.php" method="post">
                             <p id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div class="row">
@@ -1105,22 +1105,22 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <a href="javascript:void(0)" class="footer-logo text-black">Queue</a>
-                    <p class="para-desc mx-auto mt-5 text-black">Obviously I'm a Web Designer. Experienced with all
-                        stages of the development cycle for dynamic web projects.</p>
+                    <a href="javascript:void(0)" class="footer-logo text-black">SkillShowcase</a>
+                    <p class="para-desc mx-auto mt-5 text-black">Bringing forth a motivated
+                        attitude and a variety of Skills. Looking for a challenging role in a Organization to
+                        utilize my technical skills to further the mission of company as well as to enhance my
+                        knowledge about new and emerging trends in the Technical Sector</p>
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
-                        <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle"><i
-                                    class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle"><i
-                                    class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle"><i
-                                    class="mdi mdi-instagram"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle"><i
-                                    class="mdi mdi-vimeo"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle"><i
-                                    class="mdi mdi-google-plus"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle"><i
-                                    class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item me-1"><a href="https://www.facebook.com/anilpandit195"
+                                class="rounded-circle"><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item me-1"><a href="https://twitter.com/anilpandit0195"
+                                class="rounded-circle"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item me-1"><a href="https://www.instagram.com/anilpandit195/"
+                                class="rounded-circle"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item me-1"><a href="https://github.com/anilpandit195"
+                                class="rounded-circle"><i class="mdi mdi-github-circle"></i></a></li>
+                        <li class="list-inline-item me-1"><a href="https://www.linkedin.com/in/anilpandit195/"
+                                class="rounded-circle"><i class="mdi mdi-linkedin"></i></a></li>
                     </ul>
                 </div>
                 <!--end col-->
@@ -1180,22 +1180,6 @@
     </div>
     <!-- end Style switcher -->
     <!-- Javascript -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "anilpandit195@gmail.com",
-                Password: "yaliqjktecqtrpub",
-                To: 'contact@skillshowcase.ml',
-                From: document.getElementById('email').value,
-                Subject: "New Message from " + document.getElementById('name').value,
-                Body: "Name: " + document.getElementById('name').value + "\n" + "Email: " + document.getElementById('email').value + "\n" + "Message: " + document.getElementById('message').value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- Slider -->
