@@ -1034,7 +1034,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="custom-form mb-sm-30">
-                        <form action="/php/contact.php" method="post">
+                        <form onclick="sendEmail()" method="post">
                             <p id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div class="row">
@@ -1180,7 +1180,22 @@
     </div>
     <!-- end Style switcher -->
     <!-- Javascript -->
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "anilpandit195@gmail.com",
+                Password: "yaliqjktecqtrpub",
+                To: 'contact@skillshowcase.ml',
+                From: document.getElementById('email').value,
+                Subject: "New Message from " + document.getElementById('name').value,
+                Body: "Name: " + document.getElementById('name').value + "\n" + "Email: " + document.getElementById('email').value + "\n" + "Message: " + document.getElementById('message').value
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- Slider -->
