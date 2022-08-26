@@ -1034,7 +1034,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="custom-form mb-sm-30">
-                        <form action="/php/contact.php" method="post">
+                        <form action="php/contact.php" method="post" name="myForm" onsubmit="return validateForm()">
                             <p id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div class="row">
@@ -1154,22 +1154,22 @@
             <h6 class="color-scheme-title text-center font-weight-bolder mb-2">Select your color</h6>
             <ul class="pattern text-center mb-0">
                 <li class="list-inline-item">
-                    <a class="default" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    <a class="default" href="Blue" onclick="setColor('default')"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="blue" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    <a class="blue" href="red" onclick="setColor('red')"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="green" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    <a class="green" href="Green" onclick="setColor('green')"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="mosaic-blue" href="javascript: void(0);" onclick="setColor('mosaic-blue')"></a>
+                    <a class="mosaic-blue" href="Mosaic Blue" onclick="setColor('mosaic-blue')"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="light-yellow" href="javascript: void(0);" onclick="setColor('light-yellow')"></a>
+                    <a class="light-yellow" href="Yellow" onclick="setColor('light-yellow')"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="purple" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    <a class="purple" href="Purple" onclick="setColor('purple')"></a>
                 </li>
             </ul>
             <div class="bottom">
